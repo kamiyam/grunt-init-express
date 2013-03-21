@@ -15,3 +15,11 @@ grunt-init Express on Node.js
   $ cd work ##( ← must be empty folder)
 
   $ grunt-init express
+
+  $ cd app
+
+  $ express
+  $ npm install
+  $ cd ..
+
+  $ npm install && grunt
