@@ -23,7 +23,9 @@ grunt-init Express on Node.js
 
 
 	$ express
-	
+
+   destination is not empty, continue? (yes or no) yes
+
 	$ npm install
 	
 	$ cd ..

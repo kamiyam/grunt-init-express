@@ -29,21 +29,20 @@ exports.warnOn = '*';
 exports.template = function(grunt, init, done) {
 
     init.process({type: 'grunt'}, [
-        // prompt
-        init.prompt('name', 'Express Application name'),
-        init.prompt('description', 'Express Application description'),
-        init.prompt('version'),
-        init.prompt('repository'),
-        init.prompt('homepage'),
-        init.prompt('bugs'),
-        init.prompt('licenses'),
-        init.prompt('author_name'),
-        init.prompt('author_email'),
-        init.prompt('author_url'),
-        init.prompt('grunt_version'),
-        init.prompt('node_version', grunt.package.engines.node),
-        init.prompt('express_prameter',"")
-
+      // prompt
+      init.prompt( 'name' ),
+      init.prompt( 'description', 'Express Application description'),
+      init.prompt( 'version'),
+      init.prompt( 'repository'),
+      init.prompt( 'homepage'),
+      init.prompt( 'bugs'),
+      init.prompt( 'licenses'),
+      init.prompt( 'author_name'),
+      init.prompt( 'author_email'),
+      init.prompt( 'author_url'),
+      init.prompt( 'grunt_version'),
+      init.prompt( 'node_version', grunt.package.engines.node),
+      init.prompt( 'express_prameter',"")
     ], function(err, props) {
 
         props.short_name = props.name;
@@ -64,9 +63,9 @@ exports.template = function(grunt, init, done) {
             "grunt-contrib-clean": "~0.4.1",
             "grunt-contrib-copy": "~0.4.1",
             "grunt-contrib-concat": "~0.3.0",
-            "grunt-contrib-mincss": "~0.3.2",
             "grunt-contrib-uglify": "~0.2.2",
-            "grunt-express-server": "~0.4.0"
+            "grunt-express-server": "~0.4.0",
+            "grunt-contrib-cssmin": "~0.6.1"
         };
         props.peerDependencies = {
             'grunt': props.grunt_version
